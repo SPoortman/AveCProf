@@ -86,7 +86,7 @@ curvature=curvature[!is.nan(rowM)]
 
 theResult=M	   	     	   
 
-outName=paste(studyDir,"/layermatrices/","boundaries_",subject,"_",hemisphere,"_",area,"_",contrast,".RDAT",sep="")
+outName=paste(studyDir,"/layermatrices/",hemisphere,"_",area,"/","boundaries_",subject,"_",hemisphere,"_",area,"_",contrast,".RDAT",sep="")
 
 save(theResult, thickness, curvature, file=outName)
 

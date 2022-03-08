@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 args = commandArgs(trailingOnly=TRUE)
 
-if (length(args)==0 || length(args)==1) {
+if (length(args)==0 || length(args)==1 || length(args)>=3) {
   stop("Two arguments must be supplied (input file, output file).n", call.=FALSE)
 }
 

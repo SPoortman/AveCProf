@@ -27,8 +27,9 @@ export AVECPROF_SH_PERFORMSURFACESAMPLING="${AVECPROF}/scripts/perform_surface_s
 export AVECPROF_SH_CREATESURFACEMEASUREMENTS="${AVECPROF}/scripts/create_subject_surface_measurements.sh"
 
 # R scripts
+export AVECPROF_R_PREPRAWCORTEXFILES="${AVECPROF}/R/prepRawCortexFles_args.R"
+export AVECPROF_R_COMPUTEHISTBOUNDARIES="${AVECPROF}/R/computeAlignedProfiles_args.R"
 export AVECPROF_R_OPTIMIZEPROFILES="${AVECPROF}/R/optimizeProfiles.R"
-export AVECPROF_R_PREPRAWCORTEXFILES="${AVECPROF}/R/prepRawCortexFles.R"
 export AVECPROF_R_COMPUTEHISTBOUNDARIES="${AVECPROF}/R/computeHistBoundaries.R"
 
 #

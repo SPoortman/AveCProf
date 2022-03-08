@@ -56,7 +56,7 @@ len<-computeHistBoundaries(cortexRegionData[[2]], flatThickThreshold )
 curv<-computeHistBoundaries(cortexRegionData[[3]], flatCurveThreshold )
 selectedProfiles<-selectProfiles(cortexRegionData,curv[[1]],curv[[2]],len[[1]],len[[2]])
 
-croppedSelectedProfiles<-selectedProfiles[,(WM_boundary-offset):(PIAL_boundary+offset)]
+croppedSelectedProfiles<-selectedProfiles[,(wmBoundary-offset):(pialBoundary+offset)]
 optimizedProfiles<-optimizeProfiles(croppedSelectedProfiles,typeOfData="curvature")
 
 save(optimizedProfiles,file=outFileName)

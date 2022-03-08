@@ -22,14 +22,7 @@ area=args[5]
 
 require(kernlab)
 
-CURRDIR=getwd()
-NEWDIR=paste(studyDir,"/",subject,"/layers/samples",sep="")
-setwd(NEWDIR)
-
-part<-sprintf("_.*%s.layer", contrast)
-pat=paste("^",hemisphere,".",area,part,sep="")
-
-Name=dir(pattern=pat)
+Name=paste(hemisphere,".",area,"_",subject,".layer",sep="")
 
 # Because we are working with an extension of the cortex in both directions
 # it may well be that we are sometimes sample outside the volume.
